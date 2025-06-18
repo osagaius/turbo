@@ -82,9 +82,7 @@ The application includes a signup API endpoint that returns a 200 status code an
 
 ```bash
 # Test locally
-curl -X POST http://localhost:3000/api/signup \
-  -H "Content-Type: application/json" \
-  -d '{"email":"test@example.com","password":"test123"}'
+curl -X POST http://localhost:3000/api/signup -H "Content-Type: application/json" -d '{"email":"test@example.com","password":"test123"}' -v
 
 # Test via container (direct)
 curl -X POST http://192.168.64.3:3000/api/signup \
